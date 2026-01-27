@@ -9,8 +9,7 @@ frappe.query_reports["Purchasings Report"] = {
 			"fieldtype": "Link",
 			"options": "Company",
 			"default": frappe.defaults.get_default("Company"),
-			"width": "80",
-			"reqd": 1
+			"width": "80"
 		},
 		{
 			"fieldname": "supplier",
@@ -24,16 +23,14 @@ frappe.query_reports["Purchasings Report"] = {
 			"label": __("From Date"),
 			"fieldtype": "Date",
 			"default": frappe.datetime.add_months(frappe.datetime.get_today(), -1),
-			"width": "80",
-			"reqd": 1
+			"width": "80"
 		},
 		{
 			"fieldname": "to_date",
 			"label": __("To Date"),
 			"fieldtype": "Date",
 			"default": frappe.datetime.get_today(),
-			"width": "80",
-			"reqd": 1
+			"width": "80"
 		},
 		{
 			"fieldname": "item_code",
