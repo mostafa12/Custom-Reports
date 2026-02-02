@@ -28,7 +28,7 @@ def get_columns(filters):
 			"label": "Employee",
 			"fieldtype": "Link",
 			"options": "Employee",
-			"width": 150
+			"width": 120
 		},
 		{
 			"fieldname": "employee_name",
@@ -41,6 +41,13 @@ def get_columns(filters):
 			"label": "Company",
 			"fieldtype": "Link",
 			"options": "Company",
+			"width": 120
+		},
+		{
+			"fieldname": "department",
+			"label": "Department",
+			"fieldtype": "Link",
+			"options": "Department",
 			"width": 150
 		},
 		{
@@ -54,19 +61,19 @@ def get_columns(filters):
 			"fieldname": "allocated_days",
 			"label": f"Allocated Days{year_label}",
 			"fieldtype": "Int",
-			"width": 150
+			"width": 180
 		},
 		{
 			"fieldname": "used_days",
 			"label": f"Used Days{year_label}",
 			"fieldtype": "Int",
-			"width": 130
+			"width": 180
 		},
 		{
 			"fieldname": "remaining_days",
 			"label": f"Remaining Days{year_label}",
 			"fieldtype": "Int",
-			"width": 150
+			"width": 180
 		},
 	]
 
@@ -79,11 +86,14 @@ def get_data(filters):
 			la.employee AS employee,
 			la.employee_name AS employee_name,
 			la.company AS company,
+			emp.department AS department,
 			la.leave_type AS leave_type,
 			la.new_leaves_allocated AS allocated_days,
 			IFNULL(SUM(lap.total_leave_days), 0) AS used_days,
 			(la.new_leaves_allocated - IFNULL(SUM(lap.total_leave_days), 0)) AS remaining_days
 		FROM `tabLeave Allocation` la
+		INNER JOIN `tabEmployee` emp
+			ON la.employee = emp.name
 		LEFT JOIN `tabLeave Application` lap
 			ON la.employee = lap.employee
 			AND la.leave_type = lap.leave_type
@@ -99,6 +109,7 @@ def get_data(filters):
 			la.employee,
 			la.employee_name,
 			la.company,
+			emp.department,
 			la.leave_type,
 			la.new_leaves_allocated
 		ORDER BY
@@ -114,6 +125,9 @@ def get_conditions(filters):
 	
 	if filters.get("company"):
 		conditions += " AND la.company = %(company)s"
+	
+	if filters.get("department"):
+		conditions += " AND emp.department = %(department)s"
 	
 	if filters.get("employee"):
 		conditions += " AND la.employee = %(employee)s"

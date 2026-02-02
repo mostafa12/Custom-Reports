@@ -25,10 +25,10 @@ frappe.query_reports["Leave Balance"] = {
 			"default": frappe.defaults.get_user_default("Company"),
 		},
 		{
-			"fieldname": "employee",
-			"label": __("Employee"),
+			"fieldname": "department",
+			"label": __("Department"),
 			"fieldtype": "Link",
-			"options": "Employee",
+			"options": "Department",
 			"get_query": function() {
 				var company = frappe.query_report.get_filter_value('company');
 				return {
@@ -36,6 +36,20 @@ frappe.query_reports["Leave Balance"] = {
 						"company": company
 					}
 				};
+			}
+		},
+		{
+			"fieldname": "employee",
+			"label": __("Employee"),
+			"fieldtype": "Link",
+			"options": "Employee",
+			"get_query": function() {
+				var company = frappe.query_report.get_filter_value('company');
+				var department = frappe.query_report.get_filter_value('department');
+				var filters = {};
+				if (company) filters["company"] = company;
+				if (department) filters["department"] = department;
+				return { "filters": filters };
 			}
 		},
 		{
