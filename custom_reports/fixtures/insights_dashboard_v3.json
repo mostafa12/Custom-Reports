@@ -1,1 +1,64 @@
-[]
+[
+ {
+  "docstatus": 0,
+  "doctype": "Insights Dashboard v3",
+  "has_workbook_access": true,
+  "is_public": 0,
+  "is_shared_with_organization": false,
+  "items": "[\n {\n  \"chart\": \"bqjgfjrd8i\",\n  \"layout\": {\n   \"h\": 5,\n   \"i\": \"hhr1p9w0\",\n   \"moved\": false,\n   \"w\": 12,\n   \"x\": 0,\n   \"y\": 6\n  },\n  \"type\": \"chart\"\n },\n {\n  \"chart\": \"bnpqcg54t9\",\n  \"layout\": {\n   \"h\": 2,\n   \"i\": \"cf38qrst\",\n   \"moved\": false,\n   \"w\": 5,\n   \"x\": 0,\n   \"y\": 4\n  },\n  \"type\": \"chart\"\n },\n {\n  \"chart\": \"k1ter1v50j\",\n  \"layout\": {\n   \"h\": 12,\n   \"i\": \"jeaeu9mv\",\n   \"moved\": false,\n   \"w\": 7,\n   \"x\": 12,\n   \"y\": 1\n  },\n  \"type\": \"chart\"\n },\n {\n  \"chart\": \"oo0bvis8in\",\n  \"layout\": {\n   \"h\": 8,\n   \"i\": \"f9q03cf6\",\n   \"moved\": false,\n   \"w\": 12,\n   \"x\": 0,\n   \"y\": 11\n  },\n  \"type\": \"chart\"\n },\n {\n  \"chart\": \"brf0f48mhv\",\n  \"layout\": {\n   \"h\": 2,\n   \"i\": \"c2yf6u5y\",\n   \"moved\": false,\n   \"w\": 3,\n   \"x\": 5,\n   \"y\": 4\n  },\n  \"type\": \"chart\"\n },\n {\n  \"filter_name\": \"Company\",\n  \"filter_type\": \"String\",\n  \"layout\": {\n   \"h\": 1,\n   \"i\": \"jxvhskon\",\n   \"moved\": false,\n   \"w\": 4,\n   \"x\": 0,\n   \"y\": 0\n  },\n  \"links\": {\n   \"bnpqcg54t9\": \"`fqti9prr9e`.`Company`\",\n   \"bqjgfjrd8i\": \"`fqti9prr9e`.`Company`\",\n   \"brf0f48mhv\": \"`fqti9prr9e`.`Company`\",\n   \"k1ter1v50j\": \"`fqti9prr9e`.`Company`\",\n   \"oo0bvis8in\": \"`fqti9prr9e`.`Company`\"\n  },\n  \"type\": \"filter\"\n },\n {\n  \"filter_name\": \"Department\",\n  \"filter_type\": \"String\",\n  \"layout\": {\n   \"h\": 1,\n   \"i\": \"c6431njt\",\n   \"moved\": false,\n   \"w\": 4,\n   \"x\": 4,\n   \"y\": 0\n  },\n  \"links\": {\n   \"bnpqcg54t9\": \"`fqti9prr9e`.`Department`\",\n   \"bqjgfjrd8i\": \"`fqti9prr9e`.`Department`\",\n   \"brf0f48mhv\": \"`fqti9prr9e`.`Department`\",\n   \"k1ter1v50j\": \"`fqti9prr9e`.`Department`\",\n   \"oo0bvis8in\": \"`fqti9prr9e`.`Department`\"\n  },\n  \"type\": \"filter\"\n },\n {\n  \"layout\": {\n   \"h\": 3,\n   \"i\": \"2n7eh9ll\",\n   \"moved\": false,\n   \"w\": 8,\n   \"x\": 0,\n   \"y\": 1\n  },\n  \"text\": \"<p>Suppliers Metrics : </p><p>Purchasing Amount % - Number of POs - Number of Suppliers in Procurement Groups - Average Vendor Evaluation Score %</p>\",\n  \"type\": \"text\"\n },\n {\n  \"filter_name\": \"Date\",\n  \"filter_type\": \"Date\",\n  \"layout\": {\n   \"h\": 1,\n   \"i\": \"k7zz0xwl\",\n   \"moved\": false,\n   \"w\": 4,\n   \"x\": 8,\n   \"y\": 0\n  },\n  \"links\": {\n   \"bnpqcg54t9\": \"`fqti9prr9e`.`Date`\",\n   \"bqjgfjrd8i\": \"`fqti9prr9e`.`Date`\",\n   \"brf0f48mhv\": \"`fqti9prr9e`.`Date`\",\n   \"k1ter1v50j\": \"`fqti9prr9e`.`Date`\",\n   \"oo0bvis8in\": \"`fqti9prr9e`.`Date`\"\n  },\n  \"type\": \"filter\"\n },\n {\n  \"chart\": \"k1p3vu981m\",\n  \"layout\": {\n   \"h\": 6,\n   \"i\": \"48k3dgfs\",\n   \"moved\": false,\n   \"w\": 11,\n   \"x\": 0,\n   \"y\": 19\n  },\n  \"type\": \"chart\"\n },\n {\n  \"filter_name\": \"Supplier\",\n  \"filter_type\": \"String\",\n  \"layout\": {\n   \"h\": 1,\n   \"i\": \"329po57u\",\n   \"moved\": false,\n   \"w\": 4,\n   \"x\": 12,\n   \"y\": 0\n  },\n  \"links\": {\n   \"bnpqcg54t9\": \"`fqti9prr9e`.`Supplier`\",\n   \"bqjgfjrd8i\": \"`fqti9prr9e`.`Supplier`\",\n   \"brf0f48mhv\": \"`fqti9prr9e`.`Supplier`\",\n   \"k1p3vu981m\": \"`fqti9prr9e`.`Supplier`\",\n   \"k1ter1v50j\": \"`fqti9prr9e`.`Supplier`\",\n   \"oo0bvis8in\": \"`fqti9prr9e`.`Supplier`\"\n  },\n  \"type\": \"filter\"\n },\n {\n  \"chart\": \"bqth9tlq1i\",\n  \"layout\": {\n   \"h\": 6,\n   \"i\": \"lniliw2f\",\n   \"moved\": false,\n   \"w\": 7,\n   \"x\": 12,\n   \"y\": 13\n  },\n  \"type\": \"chart\"\n }\n]",
+  "linked_charts": [
+   {
+    "chart": "bqjgfjrd8i",
+    "parent": "bp0ndnucd5",
+    "parentfield": "linked_charts",
+    "parenttype": "Insights Dashboard v3"
+   },
+   {
+    "chart": "bnpqcg54t9",
+    "parent": "bp0ndnucd5",
+    "parentfield": "linked_charts",
+    "parenttype": "Insights Dashboard v3"
+   },
+   {
+    "chart": "k1ter1v50j",
+    "parent": "bp0ndnucd5",
+    "parentfield": "linked_charts",
+    "parenttype": "Insights Dashboard v3"
+   },
+   {
+    "chart": "oo0bvis8in",
+    "parent": "bp0ndnucd5",
+    "parentfield": "linked_charts",
+    "parenttype": "Insights Dashboard v3"
+   },
+   {
+    "chart": "brf0f48mhv",
+    "parent": "bp0ndnucd5",
+    "parentfield": "linked_charts",
+    "parenttype": "Insights Dashboard v3"
+   },
+   {
+    "chart": "k1p3vu981m",
+    "parent": "bp0ndnucd5",
+    "parentfield": "linked_charts",
+    "parenttype": "Insights Dashboard v3"
+   },
+   {
+    "chart": "bqth9tlq1i",
+    "parent": "bp0ndnucd5",
+    "parentfield": "linked_charts",
+    "parenttype": "Insights Dashboard v3"
+   }
+  ],
+  "modified": "2026-02-17 10:52:06.530425",
+  "name": "bp0ndnucd5",
+  "old_name": null,
+  "people_with_access": [],
+  "preview_image": "/private/files/bp0ndnucd5-preview.jpeg?984d",
+  "read_only": false,
+  "share_link": null,
+  "title": "Suppliers Performance",
+  "vertical_compact_layout": 0,
+  "workbook": "7"
+ }
+]

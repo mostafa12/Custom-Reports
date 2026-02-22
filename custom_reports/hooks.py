@@ -246,21 +246,21 @@ app_license = "mit"
 fixtures = [
     {
         "dt": "Insights Workbook",
-        "filters": {"name": "Practice : SCM"},
+        "filters": [["name", "=", "7"]],
     },
-    {  
-        "dt": "Insights Query v3",  
-        "filters": {"workbook": "Practice : SCM"},  
-    },  
-    {  
-        "dt": "Insights Chart v3",   
-        "filters": {"workbook": "Practice : SCM"},  
-    },  
-    {  
-        "dt": "Insights Dashboard v3",  
-        "filters": {  
-            "workbook": "Practice : SCM",  
-            "name": "bp0ndnucd5"  
-        },  
-    },  
+    {
+        "dt": "Insights Query v3",
+        "filters": [["workbook", "=", "7"]],
+    },
+    {
+        "dt": "Insights Chart v3",
+        "filters": [["workbook", "=", "7"]],
+    },
+    {
+        "dt": "Insights Dashboard v3",
+        "filters": [
+            ["workbook", "=", "7"],
+            ["name", "=", "bp0ndnucd5"]
+        ],
+    },
 ]
