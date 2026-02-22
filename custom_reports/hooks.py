@@ -242,3 +242,25 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+
+fixtures = [
+    {
+        "dt": "Insights Workbook",
+        "filters": {"name": "Practice : SCM"},
+    },
+    {  
+        "dt": "Insights Query v3",  
+        "filters": {"workbook": "Practice : SCM"},  
+    },  
+    {  
+        "dt": "Insights Chart v3",   
+        "filters": {"workbook": "Practice : SCM"},  
+    },  
+    {  
+        "dt": "Insights Dashboard v3",  
+        "filters": {  
+            "workbook": "Practice : SCM",  
+            "name": "bp0ndnucd5"  
+        },  
+    },  
+]
