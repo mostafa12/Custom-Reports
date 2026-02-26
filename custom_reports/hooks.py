@@ -244,23 +244,8 @@ app_license = "mit"
 
 
 fixtures = [
-    {
-        "dt": "Insights Workbook",
-        "filters": [["name", "=", "7"]],
-    },
-    {
-        "dt": "Insights Query v3",
-        "filters": [["workbook", "=", "7"]],
-    },
-    {
-        "dt": "Insights Chart v3",
-        "filters": [["workbook", "=", "7"]],
-    },
-    {
-        "dt": "Insights Dashboard v3",
-        "filters": [
-            ["workbook", "=", "7"],
-            ["name", "=", "bp0ndnucd5"]
-        ],
-    },
+    "Insights Workbook",
+    "Insights Query v3",
+    "Insights Chart v3",
+    "Insights Dashboard v3"
 ]
